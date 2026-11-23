@@ -27,6 +27,12 @@ The dev window (24h before opening) was a strong uptrend: BTC +3.64% ($58,957 �
 
 The bot profits in both halves of the window, not just one — so it is not overfit to half the data. The 3% trailing stop was never hit in the dev window (pure protection for the race window).
 
+## Local grade (dev window, independent re-grade)
+
+- Net PnL: **+$33.748401 USDC**, 1 trade, max drawdown 1.98%
+- Guardrails met; the L1 regrade reproduced the result byte for byte
+  (action_log_sha256 `07dc09ce344582ac6afd4d85020c1715ce6628efdf7251e6b4bf5576246692b0`)
+
 ## Files
 
 - `main.ts` — the bot (Node 22, type stripping, stdlib + shim only).
